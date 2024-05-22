@@ -9,6 +9,7 @@ import Profile from "./components/Profile"
 import Registration from "./components/Registration";
 import TopNav from "./components/TopNav";
 import HomePage from './components/HomePage';
+import UploadVideosPage from './components/UploadVideosPage';
 import "./index.css"
 
 const queryClient = new QueryClient();
@@ -47,6 +48,7 @@ function UnauthenticatedRoutes() {
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Registration />} />
       <Route path="*" element={<Navigate to="/login" />} />
+      <Route path="/upload_videos" element={<UploadVideosPage />} />
     </Routes>
   );
 }
