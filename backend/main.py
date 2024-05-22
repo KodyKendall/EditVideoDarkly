@@ -6,6 +6,7 @@ from fastapi.responses import JSONResponse, HTMLResponse
 from mangum import Mangum
 
 from backend.auth import auth_router
+from backend.routers.video_routes import video_router
 from backend.routers.chats import chats_router
 from backend.routers.users import users_router
 from backend.database import create_db_and_tables, EntityNotFoundException
