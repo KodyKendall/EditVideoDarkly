@@ -48,3 +48,9 @@ locally. You can also inspect the documentation using one of the following:
 - swagger at `http://127.0.0.1:8000/docs`
 - redoc at `http://127.0.0.1:8000/redoc`
 
+
+
+# Editly: 
+Install and set up Editly: https://github.com/mifi/editly (requires node 20.11.0)
+nvm install 20.11.0
+Can't build editly because distutils isn't in python3.12 
