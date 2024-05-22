@@ -18,7 +18,7 @@ const VideoUpload = () => {
         formData.append('video', selectedFile);
 
         try {
-            const response = await fetch('http://PENDING', {
+            const response = await fetch('http://P', {
                 method: 'POST',
                 body: formData,
             });

@@ -11,6 +11,15 @@ from backend import database as db
 
 video_router = APIRouter(prefix="/videos", tags=["Videos"])
 
+#to do use launch darkly here
+s3_client = boto3.client(
+    's3',
+    aws_access_key_id= "ASIATFO246XVKAH7IUER",
+    aws_secret_access_key= "WXqcc1pzWJPny001X7kTA7nqr3kySOwuY1ydWO0f",
+    )
+
+BUCKET_NAME = "fieldrocket-video-bucket-hackathon"
+
 @video_router.post("/upload", status_code=201)
 async def upload_video(file: UploadFile = File(...)):
     file_extension = file.filename.split(".")[-1]
