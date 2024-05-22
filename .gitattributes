@@ -1,2 +1,0 @@
-vids/arborist.mp4 filter=lfs diff=lfs merge=lfs -text
-vids/arborist_frames.mp4 filter=lfs diff=lfs merge=lfs -text
