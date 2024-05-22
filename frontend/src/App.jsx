@@ -10,6 +10,7 @@ import Registration from "./components/Registration";
 import TopNav from "./components/TopNav";
 import HomePage from './components/HomePage';
 import UploadVideosPage from './components/video/UploadVideosPage';
+import DisplayEditedVideoPage from './components/video/DisplayEditedVideoPage';
 import "./index.css"
 
 const queryClient = new QueryClient();
@@ -49,6 +50,7 @@ function UnauthenticatedRoutes() {
       <Route path="/register" element={<Registration />} />
       <Route path="*" element={<Navigate to="/login" />} />
       <Route path="/upload_videos" element={<UploadVideosPage />} />
+      <Route path="/display_video" element={<DisplayEditedVideoPage />} />
     </Routes>
   );
 }
