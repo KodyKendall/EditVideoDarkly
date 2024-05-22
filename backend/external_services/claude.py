@@ -3,27 +3,55 @@
 #Claude documentation
 #https://github.com/anthropics/anthropic-sdk-python
 
+import os
+# from anthropic import Anthropic
 import anthropic
 
 class ClaudeClient:
     def __init__(self, api_key):
         self.client = anthropic.Client(api_key=api_key)
-        self.model = "claude-v1"  # Choose the appropriate Claude model version
+        self.model = "claude-2"  # Use the latest Claude model
 
     def prompt(self, prompt, max_tokens=1000):
-        response = self.client.completions.create(
-            prompt=f"{anthropic.HUMAN_PROMPT}{prompt}{anthropic.AI_PROMPT}",
-            stop_sequences=[anthropic.HUMAN_PROMPT],
-            max_tokens_to_sample=max_tokens,
-            model=self.model
+        message = self.client.messages.create(
+            max_tokens=1024,
+            messages=[
+                {
+                    "role": "user",
+                    "content": prompt,
+                }
+            ],
+            model="claude-3-opus-20240229",
         )
-        return response.completion
+        return message.content
+
+        # message = [
+        #     anthropic.Message(role="system", content="You are Claude, an AI assistant created by Anthropic to be helpful, harmless, and honest."),
+        #     anthropic.Message(role="user", content=prompt)
+        # ]
+
+        # response = self.client.messages.create(
+        #     prompt=message,
+        #     max_tokens_to_sample=max_tokens,
+        #     model=self.model
+        # )
+
+        # return response.completion
 
 # Example usage
 if __name__ == "__main__":
     api_key = "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"
     claude = ClaudeClient(api_key)
 
-    prompt = "What is the capital of USA?"
+    prompt = "What is the capital of France?"
     response = claude.prompt(prompt)
     print(response)
+
+    import os
+from anthropic import Anthropic
+
+client = Anthropic(
+    # This is the default and can be omitted
+    api_key=os.environ.get("ANTHROPIC_API_KEY"),
+)
+
