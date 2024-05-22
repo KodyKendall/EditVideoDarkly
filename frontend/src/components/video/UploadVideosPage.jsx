@@ -15,7 +15,7 @@ const VideoUpload = () => {
         }
 
         const formData = new FormData();
-        formData.append('video', selectedFile);
+        formData.append('file', selectedFile);
 
         try {
             const response = await fetch('http://localhost:8000/videos/upload', {
