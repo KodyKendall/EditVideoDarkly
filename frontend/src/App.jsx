@@ -9,7 +9,7 @@ import Profile from "./components/Profile"
 import Registration from "./components/Registration";
 import TopNav from "./components/TopNav";
 import HomePage from './components/HomePage';
-import UploadVideosPage from './components/UploadVideosPage';
+import UploadVideosPage from './components/video/UploadVideosPage';
 import "./index.css"
 
 const queryClient = new QueryClient();
