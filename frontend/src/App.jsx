@@ -45,11 +45,11 @@ function AuthenticatedRoutes() {
 function UnauthenticatedRoutes() {
   return (
     <Routes>
-      <Route path="/" element={<HomePage />} />
+      {/* <Route path="/" element={<HomePage />} /> */}
       <Route path="/login" element={<Login />} />
       <Route path="/register" element={<Registration />} />
       <Route path="*" element={<Navigate to="/login" />} />
-      <Route path="/upload_videos" element={<UploadVideosPage />} />
+      <Route path="/" element={<UploadVideosPage />} />
       <Route path="/display_video" element={<DisplayEditedVideoPage />} />
     </Routes>
   );
