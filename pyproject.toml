@@ -6,7 +6,7 @@ authors = ["your_name <your@email>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.11"
 fastapi = "0.108.0"
 uvicorn = "0.25.0"
 pytest = "7.4.0"
