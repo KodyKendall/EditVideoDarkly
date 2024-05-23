@@ -1840,3 +1840,31 @@ ValueError:
 [32mINFO[0m:     [22-05-2024 14:09:11] ::1:51170 - "POST /api/v1/collections/576dfa29-0116-430d-b2ac-76a91605def7/query HTTP/1.1" 200
 [32mINFO[0m:     [22-05-2024 14:15:17] ::1:51389 - "POST /api/v1/collections/576dfa29-0116-430d-b2ac-76a91605def7/query HTTP/1.1" 200
 [32mINFO[0m:     [22-05-2024 14:20:04] ::1:51509 - "POST /api/v1/collections/576dfa29-0116-430d-b2ac-76a91605def7/query HTTP/1.1" 200
+[32mINFO[0m:     [22-05-2024 14:42:22] Set chroma_server_nofile to 65535
+[32mINFO[0m:     [22-05-2024 14:42:22] Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+[36mDEBUG[0m:    [22-05-2024 14:42:22] Starting component System
+[36mDEBUG[0m:    [22-05-2024 14:42:22] Starting component OpenTelemetryClient
+[36mDEBUG[0m:    [22-05-2024 14:42:22] Starting component SqliteDB
+[36mDEBUG[0m:    [22-05-2024 14:42:22] Starting component QuotaEnforcer
+[36mDEBUG[0m:    [22-05-2024 14:42:22] Starting component Posthog
+[36mDEBUG[0m:    [22-05-2024 14:42:22] Starting component LocalSegmentManager
+[36mDEBUG[0m:    [22-05-2024 14:42:22] Starting component SegmentAPI
+[32mINFO[0m:     [22-05-2024 14:42:22] Started server process [[36m8790[0m]
+[32mINFO[0m:     [22-05-2024 14:42:22] Waiting for application startup.
+[32mINFO[0m:     [22-05-2024 14:42:22] Application startup complete.
+[32mINFO[0m:     [22-05-2024 14:42:22] Uvicorn running on [1mhttp://localhost:8000[0m (Press CTRL+C to quit)
+[32mINFO[0m:     [22-05-2024 14:42:27] 127.0.0.1:52381 - "GET / HTTP/1.1" 404
+[32mINFO[0m:     [22-05-2024 14:42:27] 127.0.0.1:52381 - "GET /favicon.ico HTTP/1.1" 404
+[32mINFO[0m:     [22-05-2024 14:42:30] ::1:52384 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [22-05-2024 14:42:30] ::1:52384 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [22-05-2024 14:42:33] Collection test is not created.
+[32mINFO[0m:     [22-05-2024 14:42:33] ::1:52389 - "POST /api/v1/collections?tenant=default_tenant&database=default_database HTTP/1.1" 200
+[32mINFO[0m:     [22-05-2024 14:42:55] ::1:52397 - "GET /api/v1/tenants/default_tenant HTTP/1.1" 200
+[32mINFO[0m:     [22-05-2024 14:42:55] ::1:52397 - "GET /api/v1/databases/default_database?tenant=default_tenant HTTP/1.1" 200
+[36mDEBUG[0m:    [22-05-2024 14:43:03] Starting component PersistentLocalHnswSegment
+[32mINFO[0m:     [22-05-2024 14:43:03] ::1:52389 - "POST /api/v1/collections/576dfa29-0116-430d-b2ac-76a91605def7/query HTTP/1.1" 200
+[32mINFO[0m:     [22-05-2024 14:43:28] ::1:52389 - "POST /api/v1/collections/576dfa29-0116-430d-b2ac-76a91605def7/query HTTP/1.1" 200
+[32mINFO[0m:     [22-05-2024 14:47:09] ::1:52487 - "POST /api/v1/collections/576dfa29-0116-430d-b2ac-76a91605def7/query HTTP/1.1" 200
+[32mINFO[0m:     [22-05-2024 14:47:59] ::1:52508 - "POST /api/v1/collections/576dfa29-0116-430d-b2ac-76a91605def7/query HTTP/1.1" 200
+[32mINFO[0m:     [22-05-2024 14:49:35] ::1:52550 - "POST /api/v1/collections/576dfa29-0116-430d-b2ac-76a91605def7/query HTTP/1.1" 200
+[32mINFO[0m:     [22-05-2024 14:50:04] ::1:52550 - "POST /api/v1/collections/576dfa29-0116-430d-b2ac-76a91605def7/query HTTP/1.1" 200
