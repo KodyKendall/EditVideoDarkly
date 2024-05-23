@@ -49,6 +49,9 @@ locally. You can also inspect the documentation using one of the following:
 - redoc at `http://127.0.0.1:8000/redoc`
 
 
+# Running the frontend:
+npm run dev
+
 
 # Editly: 
 Install and set up Editly: https://github.com/mifi/editly (requires node 20.11.0)
